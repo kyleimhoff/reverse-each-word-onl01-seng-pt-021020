@@ -1,8 +1,11 @@
 def reverse_each_word(sentence)
   reverse_sentence = []
   words_reversed = sentence.split(" ")
-  words_reversed.collect! do |word|
+  words_reversed.collect do |word|
    word.reverse
   end
-  words_reversed.join(" ")
+end
+
+def printer(sentence)
+  reverse_each_word(sentence).join(" ")
 end
