@@ -9,7 +9,8 @@ end
 
 def collect_each_word(sentence)
   rev_word = sentence.split(" ")
-  rev_word.collect do |word|
-    word.reverse 
-  end
-  
+  b = rev_word.collect do |word|
+        word.reverse 
+      end
+      b.join(" ")
+end  
